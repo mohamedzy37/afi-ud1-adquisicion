@@ -1,0 +1,76 @@
+============================================================ 
+ respuesta-en-vivo-win7.bat 
+ Equipo: FORENSE-06   Usuario: FORENSE-06\Administrador 
+ Script: D:\USB-Herramientas-W7\volatiles\respuesta-en-vivo-win7.bat 
+ Salida: D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558 
+ Inicio: Wed 11/04/2026 20:35:59.38 
+============================================================ 
+[Wed 11/04/2026 20:35:59.72] INICIO 00-fecha-hora: echo Wed 11/04/2026 20:35:59.52 & tzutil /g & w32tm /tz
+[Wed 11/04/2026 20:35:59.90] FIN    00-fecha-hora (codigo 0)
+[Wed 11/04/2026 20:36:00.18] INICIO 01-netstat-anob: netstat -anob
+[Wed 11/04/2026 20:36:00.35] FIN    01-netstat-anob (codigo 0)
+[Wed 11/04/2026 20:36:00.61] INICIO 02-netstat-ano: netstat -ano
+[Wed 11/04/2026 20:36:00.77] FIN    02-netstat-ano (codigo 0)
+[Wed 11/04/2026 20:36:01.05] INICIO 03-arp: arp -a
+[Wed 11/04/2026 20:36:01.21] FIN    03-arp (codigo 0)
+[Wed 11/04/2026 20:36:01.47] INICIO 04-dns-cache: ipconfig /displaydns
+[Wed 11/04/2026 20:36:01.69] FIN    04-dns-cache (codigo 0)
+[Wed 11/04/2026 20:36:01.99] INICIO 05-nbtstat-cache: nbtstat -c
+[Wed 11/04/2026 20:36:02.11] FIN    05-nbtstat-cache (codigo 0)
+[Wed 11/04/2026 20:36:02.40] INICIO 06-nbtstat-sesiones: nbtstat -S
+[Wed 11/04/2026 20:36:02.54] FIN    06-nbtstat-sesiones (codigo 0)
+[Wed 11/04/2026 20:36:02.85] INICIO 07-net-session: net session
+[Wed 11/04/2026 20:36:03.01] FIN    07-net-session (codigo 0)
+[Wed 11/04/2026 20:36:03.27] INICIO 08-net-use: net use
+[Wed 11/04/2026 20:36:03.49] FIN    08-net-use (codigo 0)
+[Wed 11/04/2026 20:36:03.79] INICIO 09-net-file: net file
+[Wed 11/04/2026 20:36:03.93] FIN    09-net-file (codigo 0)
+[Wed 11/04/2026 20:36:04.19] INICIO 10-procesos-v: tasklist /v
+[Wed 11/04/2026 20:36:04.40] FIN    10-procesos-v (codigo 0)
+[Wed 11/04/2026 20:36:04.71] INICIO 11-procesos-svc: tasklist /svc
+[Wed 11/04/2026 20:36:04.93] FIN    11-procesos-svc (codigo 0)
+[Wed 11/04/2026 20:36:05.26] INICIO 12-procesos-dll: tasklist /m
+[Wed 11/04/2026 20:36:05.60] FIN    12-procesos-dll (codigo 0)
+[Wed 11/04/2026 20:36:05.93] INICIO 13-procesos-wmic: wmic process get ProcessId,ParentProcessId,Name,ExecutablePath,CommandLine,CreationDate /format:list
+[Wed 11/04/2026 20:36:06.15] FIN    13-procesos-wmic (codigo 0)
+[Wed 11/04/2026 20:36:06.46] INICIO 14-usuarios-sesion: query user
+[Wed 11/04/2026 20:36:06.63] FIN    14-usuarios-sesion (codigo 1)
+[Wed 11/04/2026 20:36:06.94] INICIO 15-sesiones-rdp: qwinsta
+[Wed 11/04/2026 20:36:07.11] FIN    15-sesiones-rdp (codigo 0)
+[Wed 11/04/2026 20:36:07.43] INICIO 16-ipconfig: ipconfig /all
+[Wed 11/04/2026 20:36:07.65] FIN    16-ipconfig (codigo 0)
+[Wed 11/04/2026 20:36:07.94] INICIO 17-rutas: route print
+[Wed 11/04/2026 20:36:08.08] FIN    17-rutas (codigo 0)
+[Wed 11/04/2026 20:36:08.36] INICIO 18-firewall: netsh advfirewall show allprofiles
+[Wed 11/04/2026 20:36:08.66] FIN    18-firewall (codigo 0)
+[Wed 11/04/2026 20:36:08.94] INICIO 19-hosts: type C:\Windows\System32\drivers\etc\hosts
+[Wed 11/04/2026 20:36:09.08] FIN    19-hosts (codigo 0)
+[Wed 11/04/2026 20:36:09.33] INICIO 20-recursos-comp: net share
+[Wed 11/04/2026 20:36:09.51] FIN    20-recursos-comp (codigo 0)
+[Wed 11/04/2026 20:36:09.77] INICIO 21-servicios: sc queryex type= service state= all
+[Wed 11/04/2026 20:36:09.93] FIN    21-servicios (codigo 0)
+[Wed 11/04/2026 20:36:10.18] INICIO 22-servicios-wmic: wmic service get Name,DisplayName,State,StartMode,PathName,ProcessId /format:list
+[Wed 11/04/2026 20:36:10.54] FIN    22-servicios-wmic (codigo 0)
+[Wed 11/04/2026 20:36:10.82] INICIO 23-tareas: schtasks /query /fo LIST /v
+[Wed 11/04/2026 20:36:11.38] FIN    23-tareas (codigo 0)
+[Wed 11/04/2026 20:36:11.63] INICIO 24-inicio-wmic: wmic startup list full
+[Wed 11/04/2026 20:36:11.82] FIN    24-inicio-wmic (codigo 0)
+[Wed 11/04/2026 20:36:12.10] INICIO 25-run-hklm: reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run /s
+[Wed 11/04/2026 20:36:12.24] FIN    25-run-hklm (codigo 0)
+[Wed 11/04/2026 20:36:12.54] INICIO 26-runonce-hklm: reg query HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce /s
+[Wed 11/04/2026 20:36:12.71] FIN    26-runonce-hklm (codigo 0)
+[Wed 11/04/2026 20:36:12.96] INICIO 27-run-hkcu: reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run /s
+[Wed 11/04/2026 20:36:13.07] FIN    27-run-hkcu (codigo 0)
+[Wed 11/04/2026 20:36:13.35] INICIO 28-runonce-hkcu: reg query HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce /s
+[Wed 11/04/2026 20:36:13.49] FIN    28-runonce-hkcu (codigo 0)
+[Wed 11/04/2026 20:36:13.77] INICIO 29-usuarios-locales: net user
+[Wed 11/04/2026 20:36:13.91] FIN    29-usuarios-locales (codigo 0)
+[Wed 11/04/2026 20:36:14.18] INICIO 30-administradores: net localgroup administradores & net localgroup administrators
+[Wed 11/04/2026 20:36:14.33] FIN    30-administradores (codigo 0)
+[Wed 11/04/2026 20:36:14.85] INICIO 31-unidades: wmic logicaldisk get DeviceID,DriveType,FileSystem,VolumeName,Size,FreeSpace /format:list
+[Wed 11/04/2026 20:36:15.13] FIN    31-unidades (codigo 0)
+[Wed 11/04/2026 20:36:15.51] INICIO 32-controladores: driverquery /v
+[Wed 11/04/2026 20:36:16.02] FIN    32-controladores (codigo 0)
+[Wed 11/04/2026 20:36:16.32] INICIO 33-systeminfo: systeminfo
+[Wed 11/04/2026 20:36:18.16] FIN    33-systeminfo (codigo 0)
+Fin: Wed 11/04/2026 20:36:18.26 

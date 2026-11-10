@@ -1,0 +1,62 @@
+﻿Created By Exterro® FTK® Imager 8.3.0.27 
+
+Case Information: 
+Case Number: Caso-01
+Evidence Number: Ev-06
+Unique description: Pendrive
+Examiner: Mohamed Ghayat
+Notes:  
+Encrypted Password : N/A
+
+Computer Name: DESKTOP-G3SK6SL
+Windows Edition: Windows 11 Pro
+Windows Version: Microsoft Windows 6.3.26200.8653
+OS build: 6.3.26200
+Processor: AMD Ryzen 7 PRO 5850U with Radeon Graphics     
+Installed RAM: 16 GB
+
+--------------------------------------------------------------
+
+Information for C:\Users\Windows\Desktop\Imagen_USB:
+
+Physical Evidentiary Item (Source) Information:
+  [Device Info]
+    Source Type: Physical
+  [Drive Geometry]
+    Cylinders: 489
+    Tracks per Cylinder: 255
+    Sectors per Track: 63
+    Bytes per Sector: 512
+    Sector Count: 7.864.320
+  [Physical Drive Information]
+    Drive Model: General UDisk USB Device
+    Drive Serial Number: 	
+    Drive Interface Type: USB
+    Removable drive: True
+    Source data size: 3840 MB
+    Sector count:    7864320
+  [Computed Hashes]
+    MD5 Hash:    25ea4b1382ec48f2374087294bdcc084
+    SHA1 Hash:   a8bcaf97c52a681295fe2cacd726ab9670fa0302
+
+Verification Definitions:
+  Computed hash: The hash calculated of the source media during the creation or verify process
+  Stored verification hash: The hash calculated during image acquisition and stored inside the image
+  Report hash: The hash calculated during image acquisition and stored in the image summary report
+
+Image Information:
+  Acquisition started:   Tue Nov 10 20:23:26 2026 (2026-11-10T19:23:26Z)
+  Acquisition finished:  Tue Nov 10 20:26:15 2026 (2026-11-10T19:26:15Z)
+  Segment list:
+    C:\Users\Windows\Desktop\Imagen_USB.E01
+    C:\Users\Windows\Desktop\Imagen_USB.E02
+
+Image Verification Results:
+  Verification started:  Tue Nov 10 20:26:15 2026 (2026-11-10T19:26:15Z)
+  Verification finished: Tue Nov 10 20:26:31 2026 (2026-11-10T19:26:31Z)
+  MD5 - Computed hash:             25ea4b1382ec48f2374087294bdcc084 : verified
+  MD5 - Stored verification hash:  25ea4b1382ec48f2374087294bdcc084 : verified
+  MD5 - Report hash:               25ea4b1382ec48f2374087294bdcc084 : verified
+  SHA1 - Computed hash:            a8bcaf97c52a681295fe2cacd726ab9670fa0302 : verified
+  SHA1 - Stored verification hash: a8bcaf97c52a681295fe2cacd726ab9670fa0302 : verified
+  SHA1 - Report hash:              a8bcaf97c52a681295fe2cacd726ab9670fa0302 : verified

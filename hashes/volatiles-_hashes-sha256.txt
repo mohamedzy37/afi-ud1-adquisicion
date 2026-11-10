@@ -1,0 +1,106 @@
+Hashes SHA-256 generados el Wed 11/04/2026 20:36:18.40 
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\00-fecha-hora.txt:
+d2 f2 f6 fc ab ab 83 8f 12 b3 c5 5a 7b 4e d9 c3 d0 d1 7c eb 1a fd c7 5e 74 92 85 11 6d b7 22 a7
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\01-netstat-anob.txt:
+f5 75 42 d2 31 9e eb 18 eb 49 82 60 f2 8b bc b6 9b 07 e4 4e 54 e0 8b f6 1e 5c b1 e0 2b 49 97 b0
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\02-netstat-ano.txt:
+f8 e5 b1 4d 5b ea 98 75 9c 9a 10 60 7e 6f b7 ef 5c dd d5 79 6c 61 59 28 b9 96 f7 fa 6d ec 41 22
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\03-arp.txt:
+1c 2d 56 78 b2 b4 4d 16 21 b6 e7 f5 3f bb 0c 3f 95 c9 c6 bc 5d ad 8d f0 c0 64 47 1b bb 5f d1 51
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\04-dns-cache.txt:
+88 e6 7f d8 67 e2 5b cb 0e 07 25 04 7d 3e e5 c8 fc a3 06 e1 9c 7b 91 c0 fe 40 c5 ac 8d a1 1e 03
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\05-nbtstat-cache.txt:
+7e 75 1c 57 02 54 7c 0a 81 09 d3 ae d9 d8 ea 39 ee 7c 17 b3 d3 7e fa 59 b9 fe 34 90 c0 ad 7f 2e
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\06-nbtstat-sesiones.txt:
+16 55 19 d5 8e dd fe 9e a1 6f 0c 7b d3 f1 7c c8 ab 91 f9 fc aa 1e 15 80 07 26 15 5c ea f1 70 75
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\07-net-session.txt:
+b4 4c 50 5b 72 1e 93 e2 a5 96 57 70 18 cc 65 b9 93 cd 63 2b 9f e7 62 0a 4b 3d b5 40 31 af ff 5d
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\08-net-use.txt:
+94 f2 62 0d 49 51 76 af 43 cf 6b 50 6e 36 f7 bc a0 c1 8c a2 f7 93 b5 7c ba 51 77 90 e5 29 eb d3
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\09-net-file.txt:
+b4 4c 50 5b 72 1e 93 e2 a5 96 57 70 18 cc 65 b9 93 cd 63 2b 9f e7 62 0a 4b 3d b5 40 31 af ff 5d
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\10-procesos-v.txt:
+82 1c 7e cf e2 2f 79 49 d1 e3 45 d4 5f 05 ff 42 d9 61 c6 71 f7 6a 65 a8 35 2b f3 77 69 37 81 65
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\11-procesos-svc.txt:
+5d 97 05 06 cd e9 c1 4a e3 13 97 18 8c d3 cd ee cd 61 bd 0b 34 5d b1 4b c3 a4 46 34 f5 8e 51 fa
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\12-procesos-dll.txt:
+f4 85 65 4b 7e 72 19 1b b6 4b bd 1c fa d6 49 73 6e 88 c8 32 ac f6 22 9f 7e f4 e5 fd 01 6b 42 8f
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\13-procesos-wmic.txt:
+fb 3c 76 c9 26 1f 53 b6 0a fd 03 57 ea 48 6f d3 a6 31 e0 d2 18 d0 bd 36 20 73 64 0c b8 c1 3e b9
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\14-usuarios-sesion.txt:
+95 84 10 63 5b b8 3a 66 60 71 a4 8f 04 26 2b 88 3e 38 7f 5c be a4 a2 8b 44 cd a1 a1 5d ea 0d b9
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\15-sesiones-rdp.txt:
+ad 81 75 db 8f ad ca ab 38 3e d1 ad cd 76 8c e1 d9 53 c0 98 23 82 6b 3a 55 37 78 dc 85 06 fd 08
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\16-ipconfig.txt:
+66 1e e5 47 5c 3a 04 fc c1 6c 21 9c 78 dd c3 92 ca ac f4 de 0b 9f 8e e3 d1 5a bd 9d cd 11 60 98
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\17-rutas.txt:
+0d bb 86 09 fb eb 1e f9 83 ef 56 27 41 d0 9e f3 d7 52 a0 58 65 ec 77 70 1b 5f d6 0d 05 ab 67 d9
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\18-firewall.txt:
+22 b3 8b 06 86 c0 43 be f9 cd a0 50 22 e5 d3 02 8c 09 53 87 88 25 f5 d7 23 37 ff 1d 8e df ce f9
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\19-hosts.txt:
+2d 6b df b3 41 be 3a 62 34 b2 47 42 37 7f 93 aa 7c 7c fb 0d 9f d6 4e fa 92 82 c8 78 52 e5 70 85
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\20-recursos-comp.txt:
+7a 22 41 70 92 af 08 c3 03 41 a2 33 1d 55 53 5b e0 17 b7 fc 09 0a 8d 34 98 bc e5 41 17 51 a7 a5
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\21-servicios.txt:
+a4 79 69 24 b8 84 4d 2c d1 7b b9 d0 ee d8 37 a1 20 4b 8c dc 8c 36 15 04 14 b0 b7 3f 47 92 4b c7
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\22-servicios-wmic.txt:
+51 cd 13 c0 c3 b5 64 c8 33 fa 64 8d 83 33 50 29 07 8e d4 c2 bd c5 a2 d1 4c 48 88 77 52 5d b8 92
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\23-tareas.txt:
+12 ea a5 d0 82 da 86 27 36 0f 4b 2e 99 eb 09 b0 a4 01 6c 6f c5 05 47 1f 6f 86 19 a6 35 46 f2 b2
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\24-inicio-wmic.txt:
+27 8a 2d d7 3b e4 ad 6f 37 7c 38 8e 6a 4a 29 2e cd 28 c2 1b 7e 45 ba c1 ec 72 87 fa 19 f3 19 64
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\25-run-hklm.txt:
+03 0a a7 57 9d 10 e9 d9 5e 8c c8 ee 60 c3 26 e6 e5 70 e3 f0 ab 69 46 5d 92 17 fc 5e c9 f6 50 3e
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\26-runonce-hklm.txt:
+7e b7 02 57 59 3d a0 6f 68 2a 3d dd a5 4a 9d 26 0d 4f c5 14 f6 45 23 7f 5c a7 4b 08 f8 da 61 a6
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\27-run-hkcu.txt:
+7e b7 02 57 59 3d a0 6f 68 2a 3d dd a5 4a 9d 26 0d 4f c5 14 f6 45 23 7f 5c a7 4b 08 f8 da 61 a6
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\28-runonce-hkcu.txt:
+7e b7 02 57 59 3d a0 6f 68 2a 3d dd a5 4a 9d 26 0d 4f c5 14 f6 45 23 7f 5c a7 4b 08 f8 da 61 a6
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\29-usuarios-locales.txt:
+0f 1b a5 dd 69 03 b0 ad 8d 41 2b 35 7d 34 d7 01 75 5e e6 86 01 09 62 a4 2c 28 8c de e5 eb b1 f3
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\30-administradores.txt:
+36 63 0a d6 8f 3c 72 b3 e2 19 ce 60 ab 25 40 8d 41 8d c4 5f 6a 6e 44 cf 60 7a 4a 39 d2 d3 13 ba
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\31-unidades.txt:
+65 b9 90 84 f8 03 df 36 59 49 16 37 08 2d 26 50 40 c1 e4 6e 6e 44 37 9e 07 5d b7 97 47 0e 82 ad
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\32-controladores.txt:
+54 36 90 fd e8 0a 59 c6 8e 00 3e fd e8 bc 24 34 0a ba 52 2a 8b db 10 85 6a 41 35 ea 20 ed a6 cc
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\33-systeminfo.txt:
+d3 e8 6e dc 24 7f 17 58 70 5a df e8 92 b7 a9 39 93 4f 6d 9f 22 21 19 f8 1e 6e b8 3c 27 e2 1c 4e
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of file D:\USB-Herramientas-W7\salida\volatiles\FORENSE-06-20261104-203558\_registro.log:
+13 83 c7 9e ac 24 47 74 2c 11 c6 a8 98 a1 09 2c 07 fa 4b 9b 4e 27 c1 18 19 cd fe 5a 28 e5 8b 50
+CertUtil: -hashfile command completed successfully.

@@ -1,0 +1,178 @@
+﻿================================================================
+hashes-evidencias.txt · afi-ud1-adquisicion
+================================================================
+Analista   : Mohammed Ghayat Zayoun
+Caso       : Almadraba Diseño · equipo de administración
+Equipo     : VM FORENSIC_10 (UUID 99749a58-fc75-4699-9298-466c2f9cb39a)
+             nombre de equipo FORENSE-06 · Windows 7 Professional SP1 x64
+Marca      : AFI-MohammedGhayat-20261104
+             (fichero en el escritorio: marca-mohamedghayat.txt.txt)
+Ubicación  : USB de respuesta (NTFS, etiqueta ESD-USB, n.º de serie
+             del volumen EA4E-856E), carpeta USB-Herramientas-W7\salida\
+Zona horaria: Europe/Madrid (UTC+01:00)
+
+Horas:
+  "real" = reloj del anfitrión, comprobado contra hora.roa.es
+           (desfase -0,23 s).
+  "VM"   = reloj de la máquina investigada. Desde ~19:50 la VM iba
+           unos 20 minutos atrasada respecto a la hora real.
+
+Algoritmos: SHA-256 (principal) y MD5
+
+================================================================
+EV-01 · Volcado de memoria RAM
+================================================================
+Fichero      : ram\PC-ADMIN-ram.elf
+Tamaño       : 1094580064 bytes (RAM de la VM: 1073274880 bytes)
+Formato      : núcleo ELF de VirtualBox (legible con Volatility 3)
+Herramienta  : VBoxManage 7.2.20r175154, desde el anfitrión
+Comando      : VBoxManage debugvm "FORENSIC_10" dumpvmcore
+               --filename=C:\caso-afi\ram\PC-ADMIN-ram.elf
+Fecha y hora : 2026-11-04 20:35 (real)
+Motivo       : DumpIt 3.6.20230117 x64 no pudo cargar su controlador en
+               Windows 7 (error 0xC0000428, firma SHA-2)
+SHA-256      : 795858400b7b6ad4f61abea8613386a27f380c0100db356ad839ebf3474a1ad6
+MD5          : 8e78f9bf4d129bee9ecde631aef476dd
+Traslado     : copia de C:\caso-afi\ram\ a USB\salida\ram\ el 2026-11-05
+               ~21:00 (real). Hash SHA-256 comprobado tras la copia
+               (Get-FileHash, 21:02): coincide.
+
+================================================================
+EV-02 · Datos volátiles
+================================================================
+Carpeta      : volatiles\FORENSE-06-20261104-203558\
+Contenido    : 34 ficheros .txt (00-fecha-hora ... 33-systeminfo),
+               _registro.log y _hashes-sha256.txt
+Herramienta  : respuesta-en-vivo-win7.bat 1.0 (comandos nativos de
+               Windows 7), ejecutado desde el USB con cmd de administrador
+Fecha y hora : 2026-11-04 20:35:59 a 20:36:18 (VM) · ~20:55-20:56 (real)
+Integridad   : cada fichero tiene su SHA-256 en _hashes-sha256.txt,
+               generado por el propio script al terminar. Comprobado en
+               el anfitrión el 2026-11-05: 35/35 coinciden.
+
+  _hashes-sha256.txt (9063 bytes)
+    SHA-256  : 128056d47dde7c406ea2ffa72b62d47dd9a58bc053b346d5081e36a1b6fe5202
+    MD5      : 09c56e4a94bf4f1b9d321163b2f7dbc1
+  _registro.log (5396 bytes)
+    SHA-256  : 1383c79eac2447742c11c6a898a1092c07fa4b9b4e27c11819cdfe5a28e58b50
+    MD5      : 459e994ce01e0cc330eee2ca916918c8
+
+================================================================
+EV-03 · Captura de tráfico de red
+================================================================
+Fichero      : red\red.pcap
+Tamaño       : 6023020 bytes
+Herramienta  : VBoxManage 7.2.20r175154 (nictrace), desde el anfitrión
+Interfaz     : NIC 1, MAC 08:00:27:B0:E9:DF, modo puente sobre
+               Realtek RTL8822CE 802.11ac (wifi del anfitrión)
+Comandos     : VBoxManage controlvm "FORENSIC_10" nictracefile1
+               C:\caso-afi\red\red.pcap
+               VBoxManage controlvm "FORENSIC_10" nictrace1 on
+               VBoxManage controlvm "FORENSIC_10" nictrace1 off
+Fecha y hora : 2026-11-04 ~20:58 a 21:55 (real)
+SHA-256      : 90c41195f1455a4cdebccada449cfd11a5fe511f83453c58a25b43654fca65f6
+MD5          : eeecceb27e87c7729e0a90c8bf85d568
+Traslado     : de C:\caso-afi\red\ a USB\salida\red\ el 2026-11-05
+               ~21:00 (real). Hash comprobado tras la copia: coincide.
+
+================================================================
+EV-04 · Triaje
+================================================================
+Fichero      : triaje\Collection-FORENSE-06-20261104-211820.zip
+Tamaño       : 46293848 bytes (incluye $MFT de C:, 69206016 bytes)
+Herramienta  : Velociraptor 0.6.9, artefacto Windows.KapeFiles.Targets,
+               target _KapeTriage, Device=C:, lanzado con
+               triaje-velociraptor-069.bat 1.0
+Comando      : velociraptor-v0.6.9-windows-amd64.exe --nobanner
+               --tempdir "D:\USB-Herramientas-W7\salida\triaje\tmp"
+               --logfile "D:\...\Collection-FORENSE-06-20261104-211820.log"
+               artifacts collect Windows.KapeFiles.Targets
+               --args Device=C: --args _KapeTriage=Y --require_admin
+               --output "D:\...\Collection-FORENSE-06-20261104-211820.zip" -v
+Fecha y hora : 2026-11-04 21:18:20 a 21:20:10 (VM), código 0
+               · ~21:38-21:40 (real)
+Motivo       : el recolector Velociraptor 0.77.3 legacy no arrancó
+               (falta api-ms-win-crt-stdio-l1-1-0.dll / UCRT)
+SHA-256      : fa6b129cba315e830a80a3cd66a15ced366b718a2dbae1822042aa9a72f0f341
+MD5          : 4ab86ec6669246d52aa3e135603fe2d8
+Verificación : hash recalculado en el anfitrión tras el apagado
+               (2026-11-04 22:09) y de nuevo el 2026-11-05: coincide.
+
+Registros de la herramienta (misma carpeta):
+  Collection-FORENSE-06-20261104-211820.log (298313 bytes)
+    SHA-256  : d71ee38b89261fc07e67d32b12f13ac2c5fd465d06f15d0afc08c530acb8c8d2
+    MD5      : 6d4e8327ff0a5f7b842e704d60277935
+  Collection-FORENSE-06-20261104-211820.resultado.json (250432 bytes)
+    SHA-256  : 912ac909893c4358e338b1a5fb3e04ee095bb673fb2640db97bee0e194843d94
+    MD5      : 9e841a576ecbd8db56999d4fb45e888e
+  Collection-FORENSE-06-20261104-211820.info.txt (979 bytes)
+    SHA-256  : 0ab638cb0ea2b0bd6387cbe7d43f024f5a3de8ae3c33f63b202dfa5153af8b70
+    MD5      : 558ee5e8edd33ae95b8882326d0f7e7e
+
+================================================================
+EV-05 · Imagen del disco de la VM (Parte 2)
+================================================================
+Origen       : FORENSIC_10_disk0.vdi (UUID 4fdf748a-fd7e-4b05-98ff-0eca49b38f27,
+               VDI dinámico, base, capacidad 34359738368 bytes)
+  SHA-256 .vdi antes : ec721351bb7e7e06a02f3e32ec0680f08109173192c0bb2f296ccc28d3702114
+  MD5 .vdi           : 983f6136be1119213be2ebcff503995c
+  SHA-256 .vdi después: ec721351bb7e7e06a02f3e32ec0680f08109173192c0bb2f296ccc28d3702114 (2026-11-05 ~22:02, coincide)
+Conversión   : VBoxManage 7.2.20 clonemedium --format RAW (FTK Imager no
+               admite VDI), 2026-11-05 ~21:30-21:32
+  PC-ADMIN.raw (34359738368 bytes, intermedio, en C:\caso-afi\disco\)
+    MD5      : 7dc45b11965b2b27f90a9f8eaafe7e30
+    SHA-256  : a2a5a640b0171ee32914a1adfe16c70b0817b1464c1c27310e55feee7578910d
+Imagen       : disco\Imagen-Disco.E01 (4979261033 bytes)
+Herramienta  : Exterro FTK Imager 8.3.0.27, Create Disk Image > Image File (RAW) > E01
+Fecha y hora : adquisición 2026-11-05 21:50:37-21:56:38,
+               verificación 21:56:38-22:00:13 (real)
+Hash del contenido (calculado y verificado por FTK Imager, Match):
+  MD5        : 7dc45b11965b2b27f90a9f8eaafe7e30  (= MD5 de PC-ADMIN.raw)
+  SHA1       : c0bb182fbb35d55720f6e2c2414ed5ae267c7460
+SHA-256 del fichero .E01 : 4eb3f7b25c5f7577c585bde6857d7bb846ffd78d145aac3c4b813dcfd93d7cf0 (2026-11-10, = copia de trabajo)
+Registro     : disco\Imagen-Disco.E01.txt (2215 bytes)
+  SHA-256    : 54b2f897195e86c02a82d75357d5499b36891ed60f70a35dacfa5e32924bd74d
+  MD5        : 5ae2653afdc930f598bb75dafd2e0a4b
+Configuración y registros de la VM copiados a disco\config\ (7 ficheros),
+SHA-256 comprobado contra los originales: 7/7 coinciden
+  FORENSIC_10.vbox      f0677852b1e257ec4ca2e652fc3d8fc7216e16ab36f7f9f827a3361e5db15945
+  FORENSIC_10.vbox-prev 53934f85ecb964d1b26cb92a6c04d2a57f08bfbbf3ff8b8d474c349fbeab3ef8
+  Logs\VBox.log         0b39c0ed65a013150ee1816b0fd9b98eea3c66bb4e92613545ff14615c9ccabf
+  Logs\VBox.log.1       99a71652c476869b1671f91f57ddbc14df187dbe2d77c477c599448b38df2c81
+  Logs\VBox.log.2       03b0693c6e015eb261aa736c01e13216e9b0369a49d7fbd47edbd926641ef872
+  Logs\VBox.log.3       071a3894a42b71b28165517eeb413ad290d9fdc0e7a9e39a4ae4a8d7ac2950b5
+  Logs\VBoxHardening.log ad31817a8d2aae3e8900eececaf13683e664de94caad0c380f0507052a841e6b
+
+================================================================
+EV-06 · Imagen del pendrive encontrado (Parte 2)
+================================================================
+Soporte      : pendrive Q-CONNECT 4 GB (tapa giratoria negra/plateada),
+               chip "General UDisk" REV 5.00, sin n.º de serie de hardware;
+               identificador de Windows USBSTOR\DISK&VEN_GENERAL&PROD_UDISK&REV_5.00\7&8BEBF63&0&_&0
+               4026531840 bytes (7864320 sectores de 512)
+Bloqueo      : bloqueo-usb1.ps1 (SHA-256 150adbc3bee0ee8f8662bee8758e4791fb090c20a48807ac24ae9bea531eef5a),
+               política StorageDevicePolicies\WriteProtect=1.
+               20:09:47 NO PROTEGIDO (la comprobación escribió y borró un .tmp:
+               ver notas de trabajo) -> reconexión -> 20:18:34 PROTEGIDO
+Herramienta  : Exterro FTK Imager 8.3.0.27, Create Disk Image > Physical Drive
+               (\\.\PHYSICALDRIVE1) > E01
+Fecha y hora : adquisición 2026-11-10 20:23:26-20:26:15,
+               verificación 20:26:15-20:26:31 (real)
+Hash del contenido (calculado y verificado por FTK Imager, Match):
+  MD5        : 25ea4b1382ec48f2374087294bdcc084
+  SHA1       : a8bcaf97c52a681295fe2cacd726ab9670fa0302
+Ficheros (carpeta pendrive\), SHA-256 comprobado tras la copia al USB: 4/4
+  Imagen_USB.E01     1572691608 bytes  233cf444e098abe3062e1bf5b6432315fe003aebe7d663ac4101ed8206efb304
+  Imagen_USB.E02      763693798 bytes  20c75e48c1505d5a2b647e5f9967148f600b38b9f3f5741a785db8a2b62ddcb1
+  Imagen_USB.E01.txt       2439 bytes  b825f85396adf61e77397f96e19830f9350f20bd97aef9db4e91264e1320fc4e
+  bloqueo-usb.log           941 bytes  dfb2a025fdb0723800ea7f944a970d7506707ee92a5463a84aa040ca549bbe42
+
+================================================================
+Copias de trabajo (C:\caso-afi\trabajo\, 2026-11-10 20:46-20:54)
+================================================================
+SHA-256 comprobado ~21:01: las 5 copias = sus maestras del USB
+  Imagen-Disco.E01                           4eb3f7b25c5f7577c585bde6857d7bb846ffd78d145aac3c4b813dcfd93d7cf0
+  Imagen_USB.E01                             233cf444e098abe3062e1bf5b6432315fe003aebe7d663ac4101ed8206efb304
+  Imagen_USB.E02                             20c75e48c1505d5a2b647e5f9967148f600b38b9f3f5741a785db8a2b62ddcb1
+  PC-ADMIN-ram.elf                           795858400b7b6ad4f61abea8613386a27f380c0100db356ad839ebf3474a1ad6
+  Collection-FORENSE-06-20261104-211820.zip  fa6b129cba315e830a80a3cd66a15ced366b718a2dbae1822042aa9a72f0f341

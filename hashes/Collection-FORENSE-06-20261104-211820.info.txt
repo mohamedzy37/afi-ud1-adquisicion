@@ -1,0 +1,9 @@
+Inicio: Wed 11/04/2026 21:18:20.72 
+Comando: "D:\USB-Herramientas-W7\triaje\Velociraptor-0.6.9\velociraptor-v0.6.9-windows-amd64.exe" --nobanner --tempdir "D:\USB-Herramientas-W7\salida\triaje\tmp" --logfile "D:\USB-Herramientas-W7\salida\triaje\Collection-FORENSE-06-20261104-211820.log" artifacts collect Windows.KapeFiles.Targets --args Device=C: --args _KapeTriage=Y --require_admin --output "D:\USB-Herramientas-W7\salida\triaje\Collection-FORENSE-06-20261104-211820.zip" -v 
+Fin: Wed 11/04/2026 21:20:10.28 (codigo 0) 
+SHA256 hash of file D:\USB-Herramientas-W7\salida\triaje\Collection-FORENSE-06-20261104-211820.zip:
+fa 6b 12 9c ba 31 5e 83 0a 80 a3 cd 66 a1 5c ed 36 6b 71 8a 2d ba e1 82 20 42 aa 9a 72 f0 f3 41
+CertUtil: -hashfile command completed successfully.
+MD5 hash of file D:\USB-Herramientas-W7\salida\triaje\Collection-FORENSE-06-20261104-211820.zip:
+4a b8 6e c6 66 92 46 d5 2a a3 e1 35 60 3f e2 d8
+CertUtil: -hashfile command completed successfully.

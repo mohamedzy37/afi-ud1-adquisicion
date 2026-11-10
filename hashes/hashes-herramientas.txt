@@ -1,0 +1,71 @@
+﻿================================================================
+hashes-herramientas.txt · USB-Herramientas-W7
+Calculado: 2026-11-04 18:19 (Europe/Madrid, CET, UTC+01:00)
+Algoritmos: MD5 y SHA-1 (SHA-256 como referencia)
+================================================================
+
+Herramienta : Magnet DumpIt 3.1.0.0 (x64)
+Fichero     : memoria\DumpIt-3.1.0-x64\DumpIt.exe
+Tamano      : 630600 bytes
+   MD5      : 0F10DA3A5EB49D17D73D8E195FE32F85
+   SHA-1    : 95F7B26CD15170A3043D6D1F049B2A88FB7A5C5F
+   SHA-256  : 6A484C1DB7718949C7027ABDE97E164C7E7E4E4214E3E29FE48AC4364C0CD23C
+
+Herramienta : WinPmem 4.0.rc1 (x64)
+Fichero     : memoria\WinPmem-4.0.rc1-x64\winpmem_mini_x64_rc2.exe
+Tamano      : 527640 bytes
+   MD5      : 9DD3160679832165738BFABD7279ACEB
+   SHA-1    : E460CA732204740674C27073E0FA478F334420FC
+   SHA-256  : A4D516B6FCAF3B5B1D4EE709CE86F8EABF1D8028B3A83101479B7568B933D21B
+
+Herramienta : respuesta-en-vivo-win7.bat 1.0
+Fichero     : volatiles\respuesta-en-vivo-win7.bat
+Tamano      : 4711 bytes
+   MD5      : 5B0820E7ED8480883B776FD8372F320F
+   SHA-1    : 09271F623F6D1DE984C13A14E314E2D6D67C1FF3
+   SHA-256  : 8C8188FEBF836C6A72A1A8CEF8E968C3CEFC930AD22562D721691D794C6B2128
+
+Herramienta : Velociraptor 0.77.3 legacy - recolector offline
+Fichero     : triaje\Velociraptor-0.77.3-legacy\Collector_velociraptor-v0.77.3-windows-amd64-legacy.exe
+Tamano      : 52875768 bytes
+   MD5      : E983FB6F469510F253B134A137CE917D
+   SHA-1    : E224D4338D7157BD8C138CE88EBE6F8B1EAEE72C
+   SHA-256  : 4BB2F171094D6E11FB48C99578BA91F320A6C643D0DD5F86EF61DEDE66C4A8D2
+
+Herramienta : Velociraptor 0.77.3 legacy - binario original
+Fichero     : triaje\Velociraptor-0.77.3-legacy\velociraptor-v0.77.3-windows-amd64-legacy.exe
+Tamano      : 52875768 bytes
+   MD5      : 0C3175272D128340E65CE58E760E2B51
+   SHA-1    : 65BA37F3F1CA712EFBC2CEC2E986BB2551C79F7C
+   SHA-256  : 7B699A6670E0CAAF8CE951225DFF479C141580A9FE8D9D0A1A7C5E83D32E1698
+
+Herramienta : Velociraptor - especificacion del recolector
+Fichero     : triaje\Velociraptor-0.77.3-legacy\spec-recolector.yaml
+Tamano      : 469 bytes
+   MD5      : 8869C0DEA60F243E17AA875B76D8429C
+   SHA-1    : A997EECC0AAB9F04A541FB240F5346EA18177E9C
+   SHA-256  : 34CDD33C312C8F1697397AD9FA30EC5907407EE1B7BDFCC3B677B9408ABAFDE9
+
+Herramienta : Magnet Encrypted Disk Detector 3.10
+Fichero     : cifrado\EDD-3.10\EDDv310.exe
+Tamano      : 207816 bytes
+   MD5      : EE4E8097DA5DC038EC3C9B2CB9DB4700
+   SHA-1    : 94D250ECA8CD73FB62541E59EC9E6191F71F22A2
+   SHA-256  : DE3FC8F41D498D2108DFD52DE8E6200C6271BB45F3FBD6DA5E4C7C648A5BB5B8
+
+Añadido: 2026-11-04 21:20 (Europe/Madrid). Motivo: la compilación legacy 0.77.3
+necesita el Universal C Runtime (api-ms-win-crt-*.dll), que no está instalado en el equipo.
+
+Herramienta : Velociraptor 0.6.9 (Windows 7, sin UCRT)
+Fichero     : triaje\Velociraptor-0.6.9\velociraptor-v0.6.9-windows-amd64.exe
+Tamano      : 54505272 bytes
+   MD5      : 74CEA9F1E8979C87E407E0D49986703C
+   SHA-1    : 0E438C9862F8BC05FD6FBC5D461B479025A8E4C4
+   SHA-256  : 4B43DDD433C34BBA7EDFE5730617C7DAE04AAB2CC1F20523FB06C0D9F6091304
+
+Herramienta : triaje-velociraptor-069.bat 1.0
+Fichero     : triaje\Velociraptor-0.6.9\triaje-velociraptor-069.bat
+Tamano      : 2004 bytes
+   MD5      : 70746256EA4A4FCA7BF9F394AE58CC53
+   SHA-1    : 09DEF219F67BC9823279AB879D4FBFB46811E73C
+   SHA-256  : 692E2584F7D12C42D14289AB34A22257F5B4E1522DFB464F54C95922DCF348C6

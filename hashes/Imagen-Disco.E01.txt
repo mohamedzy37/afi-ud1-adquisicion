@@ -1,0 +1,55 @@
+﻿Created By Exterro® FTK® Imager 8.3.0.27 
+
+Case Information: 
+Case Number: Caso-01
+Evidence Number: EV-05
+Unique Description: 
+Examiner: Mohammed Ghayat
+Notes:  
+Encrypted Password : N/A
+
+Computer Name: DESKTOP-G3SK6SL
+Windows Edition: Windows 11 Pro
+Windows Version: Microsoft Windows 6.3.26200.8653
+OS build: 6.3.26200
+Processor: AMD Ryzen 7 PRO 5850U with Radeon Graphics     
+Installed RAM: 16 GB
+
+--------------------------------------------------------------
+
+Information for D:\USB-Herramientas-W7\salida\disco\Imagen-Disco:
+
+Physical Evidentiary Item (Source) Information:
+  [Device Info]
+    Source Type: Physical
+  [Drive Geometry]
+    Bytes per Sector: 512
+    Sector Count: 67.108.864
+  [Image]
+    Image Type: Raw (dd)
+    Source data size: 32768 MB
+    Sector count:    67108864
+  [Computed Hashes]
+    MD5 Hash:    7dc45b11965b2b27f90a9f8eaafe7e30
+    SHA1 Hash:   c0bb182fbb35d55720f6e2c2414ed5ae267c7460
+
+Verification Definitions:
+  Computed hash: The hash calculated of the source media during the creation or verify process
+  Stored verification hash: The hash calculated during image acquisition and stored inside the image
+  Report hash: The hash calculated during image acquisition and stored in the image summary report
+
+Image Information:
+  Acquisition started:   Thu Nov  5 21:50:37 2026 (2026-11-05T20:50:37Z)
+  Acquisition finished:  Thu Nov  5 21:56:38 2026 (2026-11-05T20:56:38Z)
+  Segment list:
+    D:\USB-Herramientas-W7\salida\disco\Imagen-Disco.E01
+
+Image Verification Results:
+  Verification started:  Thu Nov  5 21:56:38 2026 (2026-11-05T20:56:38Z)
+  Verification finished: Thu Nov  5 22:00:13 2026 (2026-11-05T21:00:13Z)
+  MD5 - Computed hash:             7dc45b11965b2b27f90a9f8eaafe7e30 : verified
+  MD5 - Stored verification hash:  7dc45b11965b2b27f90a9f8eaafe7e30 : verified
+  MD5 - Report hash:               7dc45b11965b2b27f90a9f8eaafe7e30 : verified
+  SHA1 - Computed hash:            c0bb182fbb35d55720f6e2c2414ed5ae267c7460 : verified
+  SHA1 - Stored verification hash: c0bb182fbb35d55720f6e2c2414ed5ae267c7460 : verified
+  SHA1 - Report hash:              c0bb182fbb35d55720f6e2c2414ed5ae267c7460 : verified
